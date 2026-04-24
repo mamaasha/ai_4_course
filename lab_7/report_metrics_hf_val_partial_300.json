@@ -1,0 +1,26 @@
+{
+  "zero-shot": {
+    "accuracy": 0.5233,
+    "precision": 0.5308,
+    "recall": 0.7179,
+    "f1": 0.6104
+  },
+  "cot": {
+    "accuracy": 0.49,
+    "precision": 0.5517,
+    "recall": 0.1026,
+    "f1": 0.173
+  },
+  "few-shot": {
+    "accuracy": 0.5367,
+    "precision": 0.5752,
+    "recall": 0.4167,
+    "f1": 0.4833
+  },
+  "cot+few-shot": {
+    "accuracy": 0.5033,
+    "precision": 0.6,
+    "recall": 0.1346,
+    "f1": 0.2199
+  }
+}

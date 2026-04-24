@@ -1,0 +1,18 @@
+services:
+  llm_service:
+    build: ./llm_service
+    container_name: lab6_llm_service
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+
+  mcp_service:
+    build: ./mcp_service
+    container_name: lab6_mcp_service
+    ports:
+      - "9000:9000"
+    env_file:
+      - .env
+    depends_on:
+      - llm_service
